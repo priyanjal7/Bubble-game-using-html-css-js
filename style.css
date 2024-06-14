@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+.main .container {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .strip {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(1, 74, 1);
+    color: white;
+}
+
+.strip .elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 33.33%;
+    height: 100%;
+    border-right: 2px solid white;
+}
+
+.strip .score {
+    border: 0;
+}
+
+.elem .box {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(85, 160, 85);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .bubblearea {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: cadetblue; */
+    padding: 1vw;
+}
+
+.bubblearea .bubble {
+    width: 60px;
+    height: 60px;
+    background-color: salmon;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
